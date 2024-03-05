@@ -548,3 +548,8 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/* ADICIONADOS PELA EQUIPE */
+.tituloInicial{
+    font-size: 80px;
+}
