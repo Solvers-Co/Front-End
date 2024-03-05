@@ -319,75 +319,100 @@ h6,
 }
 
 
-/*** Testimonial ***/
-.newsletter,
-.testimonial {
-    background:
-        url(../img/bg-top.png),
-        url(../img/bg-bottom.png);
-    background-position:
-        left top,
-        right bottom;
-    background-repeat: no-repeat;
-}
+/*** Team Start ***/
 
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--light) !important;
-    border-color: var(--light);
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #888888;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item i {
-    color: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item h6 {
-    color: var(--dark) !important;
-}
-
-
-/*** Team ***/
 .team-item {
-    position: relative;
-    transition: .5s;
-    z-index: 1;
+    border-top: 30px solid var(--bs-secondary) !important;
+    background: rgba(239, 239, 241, 0.8);
 }
 
-.team-item::after {
-    position: absolute;
+.team-content::before {
+    height: 200px;
+    display: block;
     content: "";
-    top: 3rem;
-    right: 3rem;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    background: #FFFFFF;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    position: relative;
+    top: -101px;
+    background: var(--bs-secondary);
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+    padding: 60px;
+    opacity: 1;
+}
+
+.team-img-icon {
+    position: relative;
+    margin-top: -200px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.team-img {
+    border: 15px solid var(--bs-white);
+}
+
+.team-img img {
+    border: 10px solid var(--bs-secondary);
     transition: .5s;
-    z-index: -1;
 }
 
-.team-item:hover::after {
-    background: var(--primary);
-}
-
-.team-item h5,
-.team-item small {
+.team-item:hover h4 {
+    color: var(--bs-primary);
     transition: .5s;
 }
 
-.team-item:hover h5,
-.team-item:hover small {
-    color: var(--light);
+.team-item:hover .team-img img {
+    transform: scale(1.05);
+    border: 10px solid var(--bs-secondary);
 }
+
+.team-carousel .owl-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.team-carousel .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    display: flex;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    margin-left: 15px;
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+@media (max-width: 992px) {
+    .team-carousel {
+        margin-top: 3rem;
+    }
+
+    .team-carousel .owl-nav {
+        top: -85px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        margin-left: -15px;
+    }
+}
+
+/* ** Team End ***/ 
+
 
 
 /*** Project Portfolio ***/
