@@ -553,3 +553,13 @@ h6,
 .tituloInicial{
     font-size: 80px;
 }
+
+.mapsForm{
+    display: flex;
+    gap: 10px;
+}
+
+.formContato{
+    display: flex;
+    align-items: center;
+}
