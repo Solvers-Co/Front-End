@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2124B1;
-    --secondary: #4777F5;
+    --primary: #7DA0CA;
+    --secondary: #5483B3;
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
@@ -184,11 +184,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     background:
-        url(../img/bg-dot.png),
-        url(../img/bg-dot.png),
-        url(../img/bg-round.png),
-        url(../img/bg-tree.png),
-        url(../img/bg-bottom-hero.png);
+        
     background-position:
         10px 10px,
         bottom 190px right 10px,
